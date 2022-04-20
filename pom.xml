@@ -7,6 +7,22 @@
     <groupId>org.example</groupId>
     <artifactId>HW12JavaIO</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.2</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>checkstyle</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
